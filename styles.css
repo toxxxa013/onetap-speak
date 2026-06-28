@@ -575,10 +575,6 @@ h3 {
   box-shadow: 0 14px 32px rgba(16, 167, 119, 0.26);
 }
 
-.lead-sticky-cta {
-  display: none;
-}
-
 .lead-form {
   max-width: 520px;
   margin-top: 24px;
@@ -792,7 +788,6 @@ h3 {
 
 @media (max-width: 560px) {
   .lead-page {
-    padding-bottom: calc(88px + env(safe-area-inset-bottom));
     background: #ffffff;
   }
 
@@ -944,25 +939,6 @@ h3 {
   .lightbox-close {
     top: -54px;
     right: 0;
-  }
-
-  .lead-sticky-cta {
-    position: fixed;
-    right: 12px;
-    bottom: calc(12px + env(safe-area-inset-bottom));
-    left: 12px;
-    z-index: 60;
-    display: flex;
-    min-height: 58px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    color: #ffffff;
-    background: var(--green);
-    box-shadow: 0 16px 42px rgba(16, 167, 119, 0.34);
-    font-size: 18px;
-    font-weight: 900;
-    text-decoration: none;
   }
 
   .thanks-shell {
