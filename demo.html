@@ -56,12 +56,10 @@
 
         <a
           class="primary-button lead-button"
-          href="https://tally.so/r/q4pBl8"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#demo-form"
           onclick="fbq('trackCustom', 'RequestDemoClick');"
         >
-          Get my free demo
+          See your branded version free
         </a>
 
         <ul class="lead-points" aria-label="Demo includes">
@@ -69,6 +67,21 @@
           <li>Speak, translate, and hear it out loud</li>
           <li>Help button with call, WhatsApp, email, and website</li>
         </ul>
+
+        <section class="lead-form" id="demo-form" aria-labelledby="form-title">
+          <h2 id="form-title">Get your free demo</h2>
+          <p>Tell me where to send it. I will build your personalized preview in 48 hours.</p>
+          <iframe
+            data-tally-src="https://tally.so/embed/q4pBl8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="260"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="OneTap Speak demo request form"
+          ></iframe>
+        </section>
       </section>
 
       <section class="lead-visual" aria-label="OneTap Speak demo screens">
@@ -168,13 +181,33 @@
     </main>
     <a
       class="lead-sticky-cta"
-      href="https://tally.so/r/q4pBl8"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="#demo-form"
       onclick="fbq('trackCustom', 'RequestDemoClick');"
     >
       Get my free demo
     </a>
+    <script>
+      var d = document;
+      var w = "https://tally.so/widgets/embed.js";
+      var v = function() {
+        if (typeof Tally !== "undefined") {
+          Tally.loadEmbeds();
+        } else {
+          d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e) {
+            e.src = e.dataset.tallySrc;
+          });
+        }
+      };
+      if (typeof Tally !== "undefined") {
+        v();
+      } else if (d.querySelector('script[src="' + w + '"]') == null) {
+        var s = d.createElement("script");
+        s.src = w;
+        s.onload = v;
+        s.onerror = v;
+        d.body.appendChild(s);
+      }
+    </script>
     <script>
       const galleryScreens = [
         {
