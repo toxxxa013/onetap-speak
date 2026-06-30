@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Download OneTap Speak</title>
+    <title>OneTap Speak - скачать в App Store</title>
     <meta
       name="description"
-      content="Download OneTap Speak from the App Store."
+      content="OneTap Speak is a simple voice translator for Russian-speaking families in the United States."
     >
-    <meta http-equiv="refresh" content="1; url=https://apps.apple.com/us/app/onetap-speak/id6781407518?l=ru">
     <!-- Meta Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -38,105 +37,276 @@
     <style>
       :root {
         color-scheme: light;
+        --blue: #1d8fff;
         --green: #10a777;
+        --yellow: #ffe39c;
         --text: #101318;
-        --muted: #6c7179;
-        --line: #e6e8eb;
-        --bg: #f7f8fb;
+        --muted: #666d78;
+        --line: #e7e9ee;
+        --soft: #f6f8fb;
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         min-height: 100vh;
-        display: grid;
-        place-items: center;
-        padding: 28px;
-        background: var(--bg);
+        background:
+          radial-gradient(circle at 18% 0%, rgba(29, 143, 255, 0.14), transparent 32rem),
+          linear-gradient(180deg, #ffffff 0%, var(--soft) 100%);
         color: var(--text);
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
 
-      main {
-        width: min(100%, 460px);
-        padding: 28px;
-        background: #ffffff;
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        box-shadow: 0 18px 48px rgba(20, 32, 60, 0.08);
-        text-align: center;
+      .page {
+        width: min(100%, 760px);
+        margin: 0 auto;
+        padding: 18px 20px 30px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 0 26px;
       }
 
       .mark {
-        width: 52px;
-        height: 52px;
-        display: inline-grid;
+        width: 44px;
+        height: 44px;
+        display: grid;
         place-items: center;
-        margin-bottom: 18px;
-        border-radius: 16px;
-        background: #ffe39c;
-        color: #202124;
+        flex: 0 0 auto;
+        border-radius: 12px;
+        background: var(--yellow);
+        color: #171717;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: 0;
+        box-shadow: 0 8px 22px rgba(255, 197, 61, 0.28);
+      }
+
+      .brand {
+        font-size: 18px;
         font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      main {
+        display: grid;
+        gap: 22px;
+      }
+
+      .hero {
+        padding-top: 6px;
       }
 
       h1 {
-        margin: 0 0 10px;
-        font-size: 28px;
-        line-height: 1.05;
+        margin: 0;
+        max-width: 680px;
+        font-size: clamp(42px, 10vw, 72px);
+        line-height: 0.94;
+        letter-spacing: 0;
+        font-weight: 900;
       }
 
-      p {
-        margin: 0 0 22px;
+      .lead {
+        max-width: 600px;
+        margin: 18px 0 0;
         color: var(--muted);
-        font-size: 16px;
-        line-height: 1.45;
+        font-size: 22px;
+        line-height: 1.26;
+        font-weight: 600;
       }
 
-      a {
+      .offer {
+        margin: 22px 0 0;
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: 800;
+      }
+
+      .cta {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        min-height: 52px;
         width: 100%;
-        padding: 14px 18px;
-        border-radius: 12px;
+        min-height: 64px;
+        margin-top: 22px;
+        padding: 16px 20px;
+        border-radius: 16px;
         background: var(--green);
         color: #ffffff;
-        font-size: 17px;
-        font-weight: 800;
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: 0;
         text-decoration: none;
+        box-shadow: 0 14px 30px rgba(16, 167, 119, 0.25);
       }
 
-      small {
-        display: block;
-        margin-top: 14px;
+      .cta:active {
+        transform: translateY(1px);
+      }
+
+      .note {
+        margin: 12px 0 0;
         color: var(--muted);
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: center;
+      }
+
+      .panel {
+        margin-top: 2px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      .checks {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .checks li {
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        gap: 10px;
+        align-items: start;
+        color: #24282f;
+        font-size: 18px;
+        line-height: 1.28;
+        font-weight: 750;
+      }
+
+      .checks span {
+        color: var(--green);
+        font-weight: 900;
+      }
+
+      .app-card {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 14px;
+        align-items: center;
+        margin-top: 18px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: #ffffff;
+      }
+
+      .icon {
+        width: 72px;
+        height: 72px;
+        display: grid;
+        place-items: center;
+        border-radius: 18px;
+        background: var(--yellow);
+        color: #171717;
+        font-size: 42px;
+        font-weight: 900;
+      }
+
+      .app-title {
+        margin: 0 0 4px;
+        font-size: 22px;
+        font-weight: 900;
+      }
+
+      .app-copy {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      footer {
+        padding: 18px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+      }
+
+      @media (max-width: 420px) {
+        .page {
+          padding: 14px 18px 24px;
+        }
+
+        header {
+          padding-bottom: 20px;
+        }
+
+        .lead {
+          font-size: 20px;
+        }
+
+        .cta {
+          min-height: 62px;
+          font-size: 20px;
+        }
       }
     </style>
-    <script>
-      const appStoreUrl = "https://apps.apple.com/us/app/onetap-speak/id6781407518?l=ru";
-
-      window.setTimeout(function() {
-        window.location.href = appStoreUrl;
-      }, 650);
-    </script>
   </head>
   <body>
-    <main>
-      <div class="mark">1</div>
-      <h1>Opening OneTap Speak</h1>
-      <p>Redirecting you to the App Store.</p>
-      <a
-        href="https://apps.apple.com/us/app/onetap-speak/id6781407518?l=ru"
-        onclick="fbq('trackCustom', 'AppStoreClick');"
-      >
-        Download on the App Store
-      </a>
-      <small>If the App Store does not open automatically, tap the button.</small>
-    </main>
+    <div class="page">
+      <header aria-label="OneTap Speak">
+        <div class="mark">1</div>
+        <div class="brand">OneTap Speak</div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="download-title">
+          <h1 id="download-title">Переводчик для родителей в Америке.</h1>
+          <p class="lead">
+            Две большие кнопки. Голосовой перевод. Без лишних настроек.
+          </p>
+          <p class="offer">
+            Скачайте OneTap Speak в App Store и попробуйте перевод в пару касаний.
+          </p>
+          <a
+            class="cta"
+            href="https://apps.apple.com/us/app/onetap-speak/id6781407518?l=ru"
+            onclick="fbq('trackCustom', 'AppStoreClick');"
+          >
+            Открыть в App Store
+          </a>
+          <p class="note">
+            Переход не автоматический. Нажмите кнопку, чтобы открыть страницу приложения.
+          </p>
+        </section>
+
+        <section class="panel" aria-label="Что умеет OneTap Speak">
+          <ul class="checks">
+            <li><span>✓</span><strong>Просто: нажали кнопку, сказали фразу, получили перевод.</strong></li>
+            <li><span>✓</span><strong>Подходит для поездок, магазинов, такси и бытовых ситуаций.</strong></li>
+            <li><span>✓</span><strong>Работает с понятным экраном без сложных меню.</strong></li>
+          </ul>
+
+          <div class="app-card">
+            <div class="icon">1</div>
+            <div>
+              <p class="app-title">OneTap Speak</p>
+              <p class="app-copy">Voice translator for everyday conversations.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        OneTap Speak opens through the official Apple App Store page.
+      </footer>
+    </div>
   </body>
 </html>
