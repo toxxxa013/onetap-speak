@@ -45,21 +45,22 @@
           <span>OneTap Speak</span>
         </div>
 
-        <h1 id="lead-title">Your clients already use a translator. Why isn't it yours?</h1>
+        <h1 id="lead-title">Your clients already use a translator. Make it your brand they open during the trip.</h1>
         <p class="lead-text">
-          Your brand, contact info, and one-tap voice translation for travelers.
+          See what OneTap Speak would look like with your name, photo, and contact button.
+          I'll send a free preview within 48 hours. No call required.
         </p>
 
         <p class="lead-cta-note">
-          Get a free personalized demo built for you in 48 hours. Launch starts from $199.
+          Launch starts from $199 after you approve the preview.
         </p>
 
         <a
           class="primary-button lead-button"
           href="#demo-form"
-          onclick="fbq('trackCustom', 'RequestDemoClick');"
+          onclick="if (window.fbq) fbq('trackCustom', 'RequestDemoClick');"
         >
-          See your branded version free
+          Get My Free Preview
         </a>
 
         <ul class="lead-points" aria-label="Demo includes">
@@ -68,38 +69,27 @@
           <li>Help button with call, WhatsApp, email, and website</li>
         </ul>
 
-        <section class="lead-form" id="demo-form" aria-labelledby="form-title">
-          <h2 id="form-title">Get your free branded preview</h2>
-          <p>No call required. I'll send your personalized branded preview in 48 hours.</p>
-          <iframe
-            data-tally-src="https://tally.so/embed/q4pBl8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-            loading="lazy"
-            width="100%"
-            height="260"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="OneTap Speak demo request form"
-          ></iframe>
-        </section>
       </section>
 
       <section class="lead-visual" aria-label="OneTap Speak demo screens">
         <button
-          class="lead-image-button"
+          class="lead-image-button lead-phone-frame-button"
           type="button"
           data-gallery-index="0"
           aria-label="Open branded splash screen preview"
         >
-          <img
-            src="assets/demo-splash-carlos.jpg"
-            alt="Branded OneTap Speak splash screen"
-            class="lead-phone lead-phone-large"
-            width="350"
-            height="760"
-            decoding="async"
-            fetchpriority="high"
-          >
+          <span class="lead-device-frame" aria-hidden="true">
+            <img
+              src="assets/demo-splash-carlos.jpg"
+              alt=""
+              class="lead-phone lead-phone-large"
+              width="350"
+              height="760"
+              decoding="async"
+              fetchpriority="high"
+            >
+          </span>
+          <span class="sr-only">Open branded OneTap Speak iPhone preview</span>
         </button>
         <div class="lead-thumbs">
           <button
@@ -108,7 +98,7 @@
             data-gallery-index="1"
             aria-label="Open Sofia branded splash screen preview"
           >
-            <img src="assets/demo-splash-sofia.jpg" alt="Sofia branded splash screen" loading="lazy" decoding="async" width="350" height="760">
+            <span class="lead-mini-device-frame"><img src="assets/demo-splash-sofia.jpg" alt="Sofia branded splash screen" loading="lazy" decoding="async" width="350" height="760"></span>
           </button>
           <button
             class="lead-image-button"
@@ -116,7 +106,7 @@
             data-gallery-index="2"
             aria-label="Open Elena branded splash screen preview"
           >
-            <img src="assets/demo-splash-elena.jpg" alt="Elena branded splash screen" loading="lazy" decoding="async" width="350" height="760">
+            <span class="lead-mini-device-frame"><img src="assets/demo-splash-elena.jpg" alt="Elena branded splash screen" loading="lazy" decoding="async" width="350" height="760"></span>
           </button>
           <button
             class="lead-image-button"
@@ -124,7 +114,7 @@
             data-gallery-index="3"
             aria-label="Open Carlos branded translator home screen preview"
           >
-            <img src="assets/demo-home-carlos.jpg" alt="Carlos branded translator home screen" loading="lazy" decoding="async" width="350" height="760">
+            <span class="lead-mini-device-frame"><img src="assets/demo-home-carlos.jpg" alt="Carlos branded translator home screen" loading="lazy" decoding="async" width="350" height="760"></span>
           </button>
           <button
             class="lead-image-button"
@@ -132,7 +122,7 @@
             data-gallery-index="4"
             aria-label="Open Carlos help and contact screen preview"
           >
-            <img src="assets/demo-help-carlos.jpg" alt="Carlos help and contact screen" loading="lazy" decoding="async" width="350" height="760">
+            <span class="lead-mini-device-frame"><img src="assets/demo-help-carlos.jpg" alt="Carlos help and contact screen" loading="lazy" decoding="async" width="350" height="760"></span>
           </button>
           <button
             class="lead-image-button"
@@ -140,7 +130,7 @@
             data-gallery-index="5"
             aria-label="Open Sofia branded translator home screen preview"
           >
-            <img src="assets/demo-home-sofia.jpg" alt="Alternative branded translator screen" loading="lazy" decoding="async" width="350" height="760">
+            <span class="lead-mini-device-frame"><img src="assets/demo-home-sofia.jpg" alt="Alternative branded translator screen" loading="lazy" decoding="async" width="350" height="760"></span>
           </button>
           <button
             class="lead-image-button"
@@ -148,7 +138,7 @@
             data-gallery-index="6"
             aria-label="Open Sofia help and contact screen preview"
           >
-            <img src="assets/demo-help-sofia.jpg" alt="Sofia help and contact screen" loading="lazy" decoding="async" width="350" height="760">
+            <span class="lead-mini-device-frame"><img src="assets/demo-help-sofia.jpg" alt="Sofia help and contact screen" loading="lazy" decoding="async" width="350" height="760"></span>
           </button>
           <button
             class="lead-image-button"
@@ -156,7 +146,7 @@
             data-gallery-index="7"
             aria-label="Open Elena branded translator home screen preview"
           >
-            <img src="assets/demo-home-elena.jpg" alt="Elena branded translator home screen" loading="lazy" decoding="async" width="350" height="760">
+            <span class="lead-mini-device-frame"><img src="assets/demo-home-elena.jpg" alt="Elena branded translator home screen" loading="lazy" decoding="async" width="350" height="760"></span>
           </button>
           <button
             class="lead-image-button"
@@ -164,9 +154,24 @@
             data-gallery-index="8"
             aria-label="Open Elena help and contact screen preview"
           >
-            <img src="assets/demo-help-elena.jpg" alt="Elena help and contact screen" loading="lazy" decoding="async" width="350" height="760">
+            <span class="lead-mini-device-frame"><img src="assets/demo-help-elena.jpg" alt="Elena help and contact screen" loading="lazy" decoding="async" width="350" height="760"></span>
           </button>
         </div>
+      </section>
+
+      <section class="lead-form" id="demo-form" aria-labelledby="form-title">
+        <h2 id="form-title">Get your free preview</h2>
+        <p>Send your name, email, and website. I'll build a personalized branded preview within 48 hours.</p>
+        <iframe
+          data-tally-src="https://tally.so/embed/q4pBl8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="320"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="OneTap Speak demo request form"
+        ></iframe>
       </section>
 
       <div class="lightbox" id="screen-lightbox" aria-hidden="true">
@@ -174,7 +179,9 @@
         <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="OneTap Speak screen preview">
           <button class="lightbox-close" type="button" aria-label="Close screen preview">×</button>
           <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous screen">‹</button>
-          <img class="lightbox-image" src="assets/demo-splash-carlos.jpg" alt="Branded OneTap Speak splash screen">
+          <span class="lightbox-device-frame">
+            <img class="lightbox-image" src="assets/demo-splash-carlos.jpg" alt="Branded OneTap Speak splash screen">
+          </span>
           <button class="lightbox-nav lightbox-next" type="button" aria-label="Next screen">›</button>
         </div>
       </div>
