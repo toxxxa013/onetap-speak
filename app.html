@@ -66,10 +66,18 @@
       }
 
       header {
+        padding: 8px 0 26px;
+      }
+
+      .brand-link {
         display: flex;
         align-items: center;
         gap: 12px;
-        padding: 8px 0 26px;
+        width: fit-content;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(16, 167, 119, 0.18);
       }
 
       .mark {
@@ -142,6 +150,7 @@
         font-weight: 900;
         letter-spacing: 0;
         text-decoration: none;
+        cursor: pointer;
         box-shadow: 0 14px 30px rgba(16, 167, 119, 0.25);
       }
 
@@ -199,6 +208,14 @@
         border: 1px solid var(--line);
         border-radius: 18px;
         background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(16, 167, 119, 0.18);
+      }
+
+      .app-card:active {
+        transform: translateY(1px);
       }
 
       .icon {
@@ -257,8 +274,15 @@
   <body>
     <div class="page">
       <header aria-label="OneTap Speak">
-        <div class="mark">1</div>
-        <div class="brand">OneTap Speak</div>
+        <a
+          class="brand-link"
+          href="https://apps.apple.com/us/app/onetap-speak/id6781407518?l=ru"
+          onclick="if (window.fbq) fbq('trackCustom', 'AppStoreClick');"
+          aria-label="Открыть OneTap Speak в App Store"
+        >
+          <div class="mark">1</div>
+          <div class="brand">OneTap Speak</div>
+        </a>
       </header>
 
       <main>
@@ -273,7 +297,7 @@
           <a
             class="cta"
             href="https://apps.apple.com/us/app/onetap-speak/id6781407518?l=ru"
-            onclick="fbq('trackCustom', 'AppStoreClick');"
+            onclick="if (window.fbq) fbq('trackCustom', 'AppStoreClick');"
           >
             Открыть в App Store
           </a>
@@ -289,13 +313,18 @@
             <li><span>✓</span><strong>Работает с понятным экраном без сложных меню.</strong></li>
           </ul>
 
-          <div class="app-card">
+          <a
+            class="app-card"
+            href="https://apps.apple.com/us/app/onetap-speak/id6781407518?l=ru"
+            onclick="if (window.fbq) fbq('trackCustom', 'AppStoreClick');"
+            aria-label="Открыть OneTap Speak в App Store"
+          >
             <div class="icon">1</div>
             <div>
               <p class="app-title">OneTap Speak</p>
               <p class="app-copy">Voice translator for everyday conversations.</p>
             </div>
-          </div>
+          </a>
         </section>
       </main>
 
